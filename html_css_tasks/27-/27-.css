@@ -1,12 +1,85 @@
 .task_27_1 {
-    color: rgb(255, 236, 114);
+    color: rgb(255, 0, 0);
 }
 
 .task_27_2 {
-    color: #ff03;
+    color: rgb(255, 255, 0);
 }
 
 .table_task28 td {
     width: 200px;
-	height: 100px;
+    height: 100px;
+}
+
+.task28_1 p{
+    width: 300px;
+}
+
+.table_task28_2{
+    width: 400px;
+    height: 300px;
+}
+
+.task34 table{
+    width: 500px;
+}
+
+.task34 th{
+    text-align: left;
+}
+
+.task34 td{
+    text-align: center;
+}
+
+.task34 p {
+    width: 300px;
+    text-align: justify;
+}
+
+.task34 h1{
+    text-align: right;
+}
+
+.task34 h2 {
+    text-align: center;
+    width: 300px;
+    text-align: center;
+}
+
+.task35 table {
+    width: 500px;
+    height: 300px;
+}
+
+.task35 td{
+    font-weight: bold;
+    text-align: center;
+}
+
+.task35 th{
+    font-weight: normal;
+}
+
+.task36 h2 {
+    font-style: italic;
+}
+
+.task37 h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.task37 h2{
+    font-size: 40px;
+    font-style: normal;
+}
+.task37 p {
+    font-size: 30px;
+    font-family: "Comic Sans MS";
+}
+
+.task39 p{
+    font-size: 30px;
+    line-height: 1.5; /* либо line-height: 45px; */
 }
