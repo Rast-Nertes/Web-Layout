@@ -1,0 +1,121 @@
+.task_51 h1 h2 h3 {
+    text-align: center;
+}
+
+.task_52_1 h1 h2 h3 {
+    text-align: center;
+}
+
+.task_52_1 h2 {
+    color: blue;
+}
+
+.task_52_1 h3 {
+    color: red;
+    font-size: 16px;
+}
+
+.task_52_2 h1 h2 h3{
+    text-align: center;
+    color: red;
+}
+
+.task_52_2 h3 {
+    font-size: 16px;
+}
+
+ul li i {
+    color: red;
+}
+
+p i {
+    color: green;
+}
+
+.task_53_2 p b i{
+    color: red;
+}
+
+.task_54 li b{ 
+    color: red;
+}
+
+/* 55_1 + 55_2 */
+.eve {
+	color: green;
+}
+.odd {
+	color: red;
+}
+
+/* 56 */
+
+.xxx {
+    font-size: 30px;
+} 
+
+.task_57_1 .first {
+    color: red;
+}
+
+.task_57_1 .second {
+    color: green;
+}
+
+.task_57_1 .third {
+    color: blue;
+}
+
+.task_57_2 .first {
+    color: red;
+}
+
+.task_57_2 .second {
+    color: green;
+}
+
+.task_58_1 .eee, .zzz {
+    line-height: 1.5;
+	font-family: Arial;
+}
+
+.task_58_1 .eee {
+    font-size: 20px;
+}
+
+.task_58_1 .zzz {
+    font-size: 30px;
+}
+
+.task_58_2 .eee, .zzz, .ggg {
+    text-align: center;
+    font-family: Arial;
+}
+
+.task_58_2 .eee {
+    font-size: 20px;
+}
+
+.task_58_2 .zzz {
+    font-size: 30px;
+}
+
+.task_58_2 .ggg {
+    font-size: 35px;
+}
+
+.task_59 .header {
+    color: red;
+}
+
+.task_59 h2.header {
+    font-size: 40px;
+}
+
+.task_59 h3.header {
+    font-size: 30px;
+}
+
+.task_60 .eee i {
+    color: red
+}
