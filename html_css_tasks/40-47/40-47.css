@@ -1,0 +1,43 @@
+.task_41_1 p {
+    font: 13px/20px "Times New Roman";
+}
+
+.task_41_2 {
+    width: 300px;
+    font: bold 40px Arial;
+    color: red;
+}
+
+.task_41_3 {
+    font: italic bold 40px Arial; 
+    text-indent: 50px;
+    line-height: 60px;
+}
+
+.task_42 p {
+	text-indent: 50px;
+	text-align: justify;
+	width: 400px;
+}
+
+.task_44 p{
+    text-decoration: underline;
+    font: 30px Arial
+}
+
+.task_45 p {
+    text-decoration: overline;
+    font-size : 30px ;
+    color: red;
+}
+
+.task_46 p {
+    text-decoration:  line-through;
+    font-size : 30px ;
+    color: green;
+}
+
+.task_47 a {
+    text-decoration: none;
+    color : red;
+}
