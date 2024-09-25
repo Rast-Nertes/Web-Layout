@@ -1,0 +1,116 @@
+.task_61_1 .eee .bbb {
+    color: red;
+}
+
+.task_61_2 .eee h2 {
+	color: red;
+}
+
+.task_61_3 .eee h2.bbb {
+	color: red;
+}
+
+.task_61_4 .eee h3.bbb {
+	color: red;
+}
+
+.task_61_5 .eee p.bbb {
+	color: red;
+}
+
+.task_61_6 .eee .bbb .kkk {
+	color: red;
+}
+
+.task_62_1 p.bbb {
+    color: red;
+}
+
+.task_62_2 p .bbb {
+	color: red;
+}
+
+.task_62_3 .eee p.bbb {
+	color: red;
+}
+
+.task_62_4 .eee p .bbb {
+	color: red;
+}
+
+.task_63_1 .success {
+	color: green;
+}
+.task_63_1 .error {
+	color: red;
+}
+.task_63_1 .large {
+	font-size: 30px;
+}
+.task_63_1 .small {
+	font-size: 20px;
+}
+.task_63_2 .three {
+    text-align: center;
+}
+.task_63_2 .class {
+    color: red;
+}
+.task_63_2 .in {
+    font-size: large;
+}
+
+/* task 64 */
+
+#elem1 {
+    color: red;
+}
+
+#elem2 {
+    color: green;
+}
+
+#elem3 {
+    color: blue;
+} 
+
+/*Task#65*/
+#block {
+	color: rgb(255, 0, 170);
+	font-family: Verdana;
+}
+.text {
+	font-size: 45px;
+} 
+
+/* Task#66_1 */
+#element h2 {
+
+    color: rgb(0, 217, 255);
+    font-family: "Courier New";
+} 
+
+/* Task#66_2 */
+#element2 .text1 {
+    color: rgb(12, 14, 99);
+    font:  40px Arial; 
+}
+
+/* Task#66_3*/
+
+#element3 p.text3 {
+    color: blue; 
+    font:  40px Verdana ; 
+
+}
+
+/* Task#66_4*/
+
+#element4 li.text4 {
+    color: gold;
+}
+
+.task_67 .rrr.ttt.yyy {
+	color: palevioletred;
+    text-align: center;
+}
