@@ -1,0 +1,59 @@
+.task_72_1 div p {
+    color: red;
+}
+
+.task_72_2 div h2{
+    color: yellow;
+}
+
+.task_72_3 #block p {
+    color: hotpink;
+}
+
+.task_72_4 #block h2 {
+    color: aqua;
+}
+
+.task_72_5 .bbb {
+    color:green;
+}
+
+.task_72_6 #block .bbb {
+    color:grey;
+}
+
+.task_72_7 p.bbb {
+    color:green;
+}
+
+.task_72_8 h2.bbb {
+    color:blue;
+}
+
+.task_72_9 #block p.bbb {
+    color:green;
+}
+
+.task_72_10 .bbb , .xxx {
+    color:yellow;
+}
+
+.task_77_1 #elem + li{
+    color: green;
+    font-weight: bold;
+}
+
+.task_77_2 .elem + li{
+    color: blue;
+    font-weight: bold;
+}
+
+.task_78 #elem ~ li {
+    color: green;
+    font-size: large;
+}
+
+.task_79 main * p{
+    color: blue;
+    font-size: large;
+}
