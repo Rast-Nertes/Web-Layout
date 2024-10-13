@@ -1,0 +1,99 @@
+.task_84 a:hover {
+    color: blue; /* Красный цвет при наведении */
+    text-decoration: underline; 
+}
+
+.task_84 a:hover {
+    color: red; /* Красный цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.task87_1 li:first-child{
+    color :rgb(255, 0, 0);
+}
+
+
+.task87_2 li:last-child{
+    color : green;
+}
+
+.task87_3 li:first-child{
+    color :rgb(255, 0, 0);
+}
+.task87_3 li:last-child{
+    color : green;
+}
+
+.task87_4 li:nth-child(3){
+    color : red;
+}
+
+.task87_5 li:nth-child(odd){
+    color:red;
+}
+.task87_5 li:nth-child(even){
+    color: green;
+}
+
+.task87_6 li:nth-child(3n){
+    color:red;
+}
+
+.task87_7 li:nth-last-child(2){
+    color:red; 
+}
+
+.task87_8 li:only-child {
+	color: red;
+}
+
+.task87_8 ul {
+	margin-bottom: 10px;
+}
+
+.task87_9 li {
+    border: 1px solid red;
+    width: 100px;
+    padding: 3px;
+    margin-top: 10px;
+   }
+.task87_9 li:empty {
+    border: 1px solid blue;
+}
+
+.task_88_1 {
+    /* Применение стиля к третьему элементу среди всех абзацев */
+    p:nth-of-type(3) {
+       color: blue;
+       font-weight: bold;
+   }
+
+   /* Применение стиля ко второму элементу среди заголовков h2 с конца */
+   h2:nth-last-of-type(2) {
+       color: green;
+   }
+}
+
+.task_88_2 {
+    p:first-of-type {
+       color: purple;
+       font-style: italic;
+    }
+
+   h2:last-of-type {
+       color: orange;
+       text-transform: uppercase;
+   }
+}
+
+.task_88_3 {
+    p:only-of-type {
+       color: darkred;
+       font-size: 1.5em;
+       text-align: center;
+    }
+
+   h2:only-of-type {
+       color: darkblue;
+   }
+}
