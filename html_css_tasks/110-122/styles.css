@@ -1,0 +1,27 @@
+#task_112 ul {
+	list-style-type: square;
+}
+
+#task_113 ul {
+    list-style-type: circle;
+}
+
+#task_115 ul {
+	list-style-type: none;
+}
+
+#task_119 ol {
+	list-style-type: lower-alpha;
+}
+
+#task_120 ol {
+	list-style-type:upper-alpha;
+}
+
+#task_121 ol {
+	list-style-type: lower-greek;
+}
+
+#task_122 ol {
+	list-style-type: decimal-leading-zero;
+}
