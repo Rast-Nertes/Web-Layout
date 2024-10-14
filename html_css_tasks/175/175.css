@@ -1,0 +1,29 @@
+div {
+    width: 100px;               /* Ширина квадратов */
+    height: 100px;              /* Высота квадратов */
+    margin: 30px 0;             /* Отступы сверху и снизу */
+}
+
+#elem175_1 {
+    position: relative;
+    top: 80px;
+    left: 40px;
+	background-color: #FF8888;
+}
+#elem175_2 {
+    position: relative;
+    top: 40px;
+    left: 80px;
+	background-color: #7E89EB;
+}
+#elem175_3 {
+    position: relative;
+    left: 160px;
+	background-color: #4DEE99;
+}
+
+#elem175_1, #elem175_2, #elem175_3 {
+    width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+}
