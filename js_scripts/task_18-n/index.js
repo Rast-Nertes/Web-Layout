@@ -1421,3 +1421,598 @@ button157.addEventListener('click', function() {
     console.log(typeof {x: 1, y: 2, z: 3}); // Выводит 'object', так как это объект
 });
 document.getElementById('btn157').appendChild(button157);
+
+const button158 = document.createElement('button');
+button158.innerText = '97_2';
+button158.addEventListener('click', function() {
+    console.log(typeof [1, 2, 3]); // Выводит 'object', так как массивы также являются объектами
+});
+document.getElementById('btn158').appendChild(button158);
+
+const button159 = document.createElement('button');
+button159.innerText = '97_3';
+button159.addEventListener('click', function() {
+    let arr = [1, 2, 3];
+    console.log(typeof arr); // Выводит 'object', так как переменная arr — это массив (объект)
+});
+document.getElementById('btn159').appendChild(button159);
+
+const button160 = document.createElement('button');
+button160.innerText = '97_4';
+button160.addEventListener('click', function() {
+    let arr = [1, 2, 3];
+    console.log(typeof arr[0]); // Выводит 'number', так как arr[0] равно 1
+});
+document.getElementById('btn160').appendChild(button160);
+
+const button161 = document.createElement('button');
+button161.innerText = '97_5';
+button161.addEventListener('click', function() {
+    let arr = ['1', '2', '3'];
+    console.log(typeof arr[0]); // Выводит 'string', так как arr[0] равно '1', что является строкой
+});
+document.getElementById('btn161').appendChild(button161);
+
+const button162 = document.createElement('button');
+button162.innerText = '98_1';
+button162.addEventListener('click', function() {
+    console.log(Array.isArray([1, 2, 3])); // Выводит true, так как [1, 2, 3] является массивом
+});
+document.getElementById('btn162').appendChild(button162);
+
+const button163 = document.createElement('button');
+button163.innerText = '98_2';
+button163.addEventListener('click', function() {
+    console.log(Array.isArray({x: 1, y: 2, z: 3})); // Выводит false, так как {x: 1, y: 2, z: 3} является объектом, а не массивом
+});
+document.getElementById('btn163').appendChild(button163);
+
+const button164 = document.createElement('button');
+button164.innerText = '99_1';
+button164.addEventListener('click', function() {
+    let test = {x: 1, y: 2, z: 3};
+    console.log(test); // Выводит объект: {x: 1, y: 2, z: 3}. Это объект, не примитив.
+});
+document.getElementById('btn164').appendChild(button164);
+
+const button165 = document.createElement('button');
+button165.innerText = '99_2';
+button165.addEventListener('click', function() {
+    let test = {x: 1, y: 2, z: 3};
+    console.log(test.x); // Выводит 1. Это примитив (число).
+});
+document.getElementById('btn165').appendChild(button165);
+
+const button166 = document.createElement('button');
+button166.innerText = '99_3';
+button166.addEventListener('click', function() {
+    let test = [1, 2, 3];
+    console.log(test); // Выводит массив: [1, 2, 3]. Это объект, не примитив.
+});
+document.getElementById('btn166').appendChild(button166);
+
+const button167 = document.createElement('button');
+button167.innerText = '99_4';
+button167.addEventListener('click', function() {
+    let test = [1, 2, 3];
+    console.log(test[1]); // Выводит 2. Это примитив (число).
+});
+document.getElementById('btn167').appendChild(button167);
+
+const button168 = document.createElement('button');
+button168.innerText = '99_5';
+button168.addEventListener('click', function() {
+    let test1 = [1, 2, 3];
+    let test2 = 1;
+    console.log(test1); // Выводит массив: [1, 2, 3]. Это объект, не примитив.
+});
+document.getElementById('btn168').appendChild(button168);
+
+const button169 = document.createElement('button');
+button169.innerText = '99_6';
+button169.addEventListener('click', function() {
+    let test1 = [1, 2, 3];
+    let test2 = 1;
+    console.log(test1[test2]); // Выводит 2. Это примитив (число).
+});
+document.getElementById('btn169').appendChild(button169);
+
+const button170 = document.createElement('button');
+button170.innerText = '99_7';
+button170.addEventListener('click', function() {
+    // Перечисляем примитивные типы данных в JavaScript
+    console.log("Примитивные типы данных в JavaScript: undefined, null, boolean, number, string, symbol, bigint.");
+});
+document.getElementById('btn170').appendChild(button170);
+
+const button171 = document.createElement('button');
+button171.innerText = '100_1';
+button171.addEventListener('click', function() {
+    let arr1 = [1, 2, 3];
+    let arr2 = arr1;
+
+    arr1[0] = 'a';
+    console.log(arr2); // Выводит ['a', 2, 3]. arr2 ссылается на тот же массив, что и arr1.
+});
+document.getElementById('btn171').appendChild(button171);
+
+const button172 = document.createElement('button');
+button172.innerText = '100_2';
+button172.addEventListener('click', function() {
+    let arr1 = [1, 2, 3];
+    let arr2 = arr1;
+
+    arr1[0] = 'a';
+    arr2[1] = 'b';
+
+    console.log(arr1); // Выводит ['a', 'b', 3]. Изменения в arr2 отражаются в arr1, так как это один и тот же массив.
+});
+document.getElementById('btn172').appendChild(button172);
+
+const button173 = document.createElement('button');
+button173.innerText = '100_3';
+button173.addEventListener('click', function() {
+    let arr1 = [1, 2, 3];
+    let arr2 = arr1;
+
+    arr1[0] = 'a';
+    arr2[0] = 'b';
+
+    console.log(arr2); // Выводит ['b', 2, 3]. arr2 ссылается на тот же массив, поэтому изменение arr2[0] также изменяет arr1[0].
+});
+document.getElementById('btn173').appendChild(button173);
+
+const button174 = document.createElement('button');
+button174.innerText = '101_1';
+button174.addEventListener('click', function() {
+    const arr = ['a', 'b', 'c'];
+    arr[1] = '!'; // Изменяем второй элемент массива на '!'
+    console.log(arr); // Выводит ['a', '!', 'c'].
+});
+document.getElementById('btn174').appendChild(button174);
+
+const button175 = document.createElement('button');
+button175.innerText = '101_2';
+button175.addEventListener('click', function() {
+    let arr = ['a', 'b', 'c'];
+    arr = [1, 2, 3]; // Попытка изменить ссылку на массив, что вызовет ошибку.
+    console.log(arr); // Ошибка: TypeError: Assignment to constant variable.
+});
+document.getElementById('btn175').appendChild(button175);
+
+const button176 = document.createElement('button');
+button176.innerText = '101_3';
+button176.addEventListener('click', function() {
+    let arr = ['a', 'b', 'c'];
+    arr = ['a', 'b', 'c']; // Попытка изменить ссылку на массив, что вызовет ошибку.
+    console.log(arr); // Ошибка: TypeError: Assignment to constant variable.
+});
+document.getElementById('btn176').appendChild(button176);
+
+const button177 = document.createElement('button');
+button177.innerText = '102_1';
+button177.addEventListener('click', function() {
+    const arr = [1, 2, 3, 4, 5];
+    const res = arr[1] + arr[2];
+
+    console.log(res); // Выводит 5 (2 + 3).
+});
+document.getElementById('btn177').appendChild(button177);
+
+const button178 = document.createElement('button');
+button178.innerText = '103_1';
+button178.addEventListener('click', function() {
+    let obj = {x: 1, y: 2, z: 3};
+    console.log(obj['x']);
+});
+document.getElementById('btn178').appendChild(button178);
+
+const button179 = document.createElement('button');
+button179.innerText = '103_2';
+button179.addEventListener('click', function() {
+    let obj = {x: 1, y: 2, z: 3};
+    let key = 'x';
+
+    console.log(obj[key]);
+});
+document.getElementById('btn179').appendChild(button179);
+
+const button180 = document.createElement('button');
+button180.innerText = '103_3';
+button180.addEventListener('click', function() {
+    let obj = {x: 1, y: 2, z: 3};
+    let sum = obj['x'] + obj['y'] + obj['z'];
+
+    console.log(sum);
+});
+document.getElementById('btn180').appendChild(button180);
+
+const button181 = document.createElement('button');
+button181.innerText = '103_4';
+button181.addEventListener('click', function() {
+    let obj = {x: 1, y: 2, z: 3};
+    console.log(Object.keys(obj).length);
+});
+document.getElementById('btn181').appendChild(button181);
+
+const button182 = document.createElement('button');
+button182.innerText = '105_1';
+button182.addEventListener('click', function() {
+    const test = 12;
+    if (test > 10) {
+        console.log('Переменная test больше 10');
+    } else {
+        console.log('Переменная test не больше 10');
+    }
+});
+document.getElementById('btn182').appendChild(button182);
+
+const button183 = document.createElement('button');
+button183.innerText = '105_2';
+button183.addEventListener('click', function() {
+    const test = 8;
+    if (test < 10) {
+        console.log('Переменная test меньше 10');
+    } else {
+        console.log('Переменная test не меньше 10');
+    }
+});
+document.getElementById('btn183').appendChild(button183);
+
+const button184 = document.createElement('button');
+button184.innerText = '105_3';
+button184.addEventListener('click', function() {
+    const test = 10;
+    if (test >= 10) {
+        console.log('Переменная test больше или равна 10');
+    } else {
+        console.log('Переменная test меньше 10');
+    }
+});
+document.getElementById('btn184').appendChild(button184);
+
+const button185 = document.createElement('button');
+button185.innerText = '105_4';
+button185.addEventListener('click', function() {
+    const test = 10;
+    if (test <= 10) {
+        console.log('Переменная test меньше или равна 10');
+    } else {
+        console.log('Переменная test больше 10');
+    }
+});
+document.getElementById('btn185').appendChild(button185);
+
+const button186 = document.createElement('button');
+button186.innerText = '106_1';
+button186.addEventListener('click', function() {
+    const test = 10;
+    if (test === 10) {
+        console.log('Переменная test равна 10');
+    } else {
+        console.log('Переменная test не равна 10');
+    }
+});
+document.getElementById('btn186').appendChild(button186);
+
+const button187 = document.createElement('button');
+button187.innerText = '107_1';
+button187.addEventListener('click', function() {
+    const test = 10;
+    if (test !== 10) {
+        console.log('Переменная test не равна 10');
+    } else {
+        console.log('Переменная test равна 10');
+    }
+});
+document.getElementById('btn187').appendChild(button187);
+
+const button188 = document.createElement('button');
+button188.innerText = '108_1';
+button188.addEventListener('click', function() {
+    const test1 = 10;
+    const test2 = 15;
+
+    if (test1 > test2) {
+        console.log('test1 больше test2');
+    } else if (test1 < test2) {
+        console.log('test2 больше test1');
+    } else {
+        console.log('test1 и test2 равны');
+    }
+});
+document.getElementById('btn188').appendChild(button188);
+
+const button189 = document.createElement('button');
+button189.innerText = '108_2';
+button189.addEventListener('click', function() {
+    const test1 = 10;
+    const test2 = 10;
+
+    if (test1 === test2) {
+        console.log('test1 равен test2');
+    } else {
+        console.log('test1 не равен test2');
+    }
+});
+document.getElementById('btn189').appendChild(button189);
+
+const button190 = document.createElement('button');
+button190.innerText = '109_1';
+button190.addEventListener('click', function() {
+    const test1 = 'Hello';
+    const test2 = 'Hello';
+
+    if (test1 === test2) {
+        console.log('test1 равен test2');
+    } else {
+        console.log('test1 не равен test2');
+    }
+});
+document.getElementById('btn190').appendChild(button190);
+
+const button191 = document.createElement('button');
+button191.innerText = '110_1';
+button191.addEventListener('click', function() {
+    let test1 = '123';
+    let test2 = 123;
+
+    if (test1 === test2) {
+        console.log('test1 равен test2');
+    } else {
+        console.log('test1 не равен test2');
+    }
+});
+document.getElementById('btn191').appendChild(button191);
+
+const button192 = document.createElement('button');
+button192.innerText = '111_1';
+button192.addEventListener('click', function() {
+    let test1 = '3';
+    let test2 = '3';
+
+    if (test1 == test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn192').appendChild(button192);
+
+const button193 = document.createElement('button');
+button193.innerText = '111_2';
+button193.addEventListener('click', function() {
+    let test1 = '3';
+    let test2 = '3';
+
+    if (test1 === test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn193').appendChild(button193);
+
+const button194 = document.createElement('button');
+button194.innerText = '111_3';
+button194.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = '3';
+
+    if (test1 == test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn194').appendChild(button194);
+
+const button195 = document.createElement('button');
+button195.innerText = '111_4';
+button195.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = '3';
+
+    if (test1 === test2) {
+        console.log('+++'); // Выведется '---'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn195').appendChild(button195);
+
+const button196 = document.createElement('button');
+button196.innerText = '111_5';
+button196.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = 3;
+
+    if (test1 === test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn196').appendChild(button196);
+
+const button197 = document.createElement('button');
+button197.innerText = '112_1';
+button197.addEventListener('click', function() {
+    let test1 = '3';
+    let test2 = '3';
+
+    if (test1 != test2) {
+        console.log('+++'); // Выведется '---'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn197').appendChild(button197);
+
+const button198 = document.createElement('button');
+button198.innerText = '112_2';
+button198.addEventListener('click', function() {
+    let test1 = '3';
+    let test2 = '3';
+
+    if (test1 !== test2) {
+        console.log('+++'); // Выведется '---'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn198').appendChild(button198);
+
+const button199 = document.createElement('button');
+button199.innerText = '112_3';
+button199.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = '3';
+
+    if (test1 != test2) {
+        console.log('+++'); // Выведется '---'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn199').appendChild(button199);
+
+const button200 = document.createElement('button');
+button200.innerText = '112_4';
+button200.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = '3';
+
+    if (test1 !== test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn200').appendChild(button200);
+
+const button201 = document.createElement('button');
+button201.innerText = '112_5';
+button201.addEventListener('click', function() {
+    let test1 = 3;
+    let test2 = 2;
+
+    if (test1 !== test2) {
+        console.log('+++'); // Выведется '+++'
+    } else {
+        console.log('---');
+    }
+});
+document.getElementById('btn201').appendChild(button201);
+
+const button202 = document.createElement('button');
+button202.innerText = '113_1';
+button202.addEventListener('click', function() {
+    let num = 3;
+    if (num > 0 && num < 5) {
+        console.log('num больше 0 и меньше 5');
+    } else {
+        console.log('num не в пределах от 0 до 5');
+    }
+});
+document.getElementById('btn202').appendChild(button202);
+
+const button203 = document.createElement('button');
+button203.innerText = '113_2';
+button203.addEventListener('click', function() {
+    let num = 15;
+    if (num >= 10 && num <= 20) {
+        console.log('num больше или равен 10 и меньше или равен 20');
+    } else {
+        console.log('num не в пределах от 10 до 20');
+    }
+});
+document.getElementById('btn203').appendChild(button203);
+
+const button204 = document.createElement('button');
+button204.innerText = '113_3';
+button204.addEventListener('click', function() {
+    let num1 = 1;
+    let num2 = 3;
+    if (num1 <= 1 && num2 >= 3) {
+        console.log('num1 меньше или равен 1 и num2 больше или равен 3');
+    } else {
+        console.log('Условия не выполнены');
+    }
+});
+document.getElementById('btn204').appendChild(button204);
+
+const button205 = document.createElement('button');
+button205.innerText = '114_1';
+button205.addEventListener('click', function() {
+    let num1 = -10;
+    let num2 = -10;
+
+    // Проверяем, являются ли обе переменные неотрицательными
+    if (num1 >= 0 || num2 >= 0) {
+        console.log('+++'); // Если хотя бы одна переменная неотрицательная, выводим '+++'
+    } else {
+        console.log('---'); // Если обе переменные отрицательные, выводим '---'
+    }
+});
+document.getElementById('btn205').appendChild(button205);
+
+const button206 = document.createElement('button');
+button206.innerText = '114_2';
+button206.addEventListener('click', function() {
+    let num1 = 0;
+    let num2 = 0;
+
+    // Проверяем, являются ли обе переменные неотрицательными
+    if (num1 >= 0 || num2 >= 0) {
+        console.log('+++'); // Одна из переменных неотрицательная, выводим '+++'
+    } else {
+        console.log('---'); // Не должно произойти, так как 0 не отрицательное
+    }
+});
+document.getElementById('btn206').appendChild(button206);
+
+const button207 = document.createElement('button');
+button207.innerText = '114_3';
+button207.addEventListener('click', function() {
+    let num1 = 0;
+    let num2 = 5;
+
+    // Проверяем, являются ли обе переменные неотрицательными
+    if (num1 >= 0 || num2 >= 0) {
+        console.log('+++'); // Одна из переменных неотрицательная, выводим '+++'
+    } else {
+        console.log('---'); // Не должно произойти, так как 0 не отрицательное
+    }
+});
+document.getElementById('btn207').appendChild(button207);
+
+const button208 = document.createElement('button');
+button208.innerText = '114_4';
+button208.addEventListener('click', function() {
+    let num1 = 5;
+    let num2 = 5;
+
+    // Проверяем, являются ли обе переменные неотрицательными
+    if (num1 >= 0 || num2 >= 0) {
+        console.log('+++'); // Одна из переменных неотрицательная, выводим '+++'
+    } else {
+        console.log('---'); // Не должно произойти, так как обе переменные не отрицательные
+    }
+});
+document.getElementById('btn208').appendChild(button208);
+
+const button209 = document.createElement('button');
+button209.innerText = '114_5';
+button209.addEventListener('click', function() {
+    let num1 = -5;
+    let num2 = 15;
+
+    // Проверяем, являются ли обе переменные неотрицательными
+    if (num1 >= 0 || num2 >= 0) {
+        console.log('+++'); // Одна из переменных неотрицательная, выводим '+++'
+    } else {
+        console.log('---'); // Не должно произойти, так как одна из переменных отрицательная
+    }
+});
+document.getElementById('btn209').appendChild(button209);
